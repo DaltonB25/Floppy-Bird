@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <link rel="stylesheet" href="./style.css" />
+  <title>Floppy Bird</title>
+</head>
+
+<body>
+  <main>
+    
+    <div id="game-intro">
+      <!-- <img src="../Flappy-Bird-Project/images/floppybirdpic.PNG" alt="Background Image" class="background-image"> -->
+      <button id="start-button">Start Game</button>
+      <img src="./images/flappy-bird.png" alt="" class="arrows-img" />
+      
+      <p id="controls-p"> Controls </p>
+      <br />
+      <p id="controls-p">Use the SPACE bar to stay in the air!</p>
+      <img src="./images/space bar.PNG" alt="" class="spacebar-img" />
+    </div>
+    
+    <div id="game-container">
+      <div id="stats-container">
+        <h2>Stats</h2>
+        <p>Score: <span id="score">0</span></p>
+        <p>Lives: <span id="lives">1</span></p>
+      </div>
+    
+    
+    <div id="game-screen"></div>
+    <div class="containers" id="clock-container"> 
+      <p> <span id="clock">30</span></p>
+      
+    </div>
+  </div>
+  
+    <div id="game-end">
+     
+    <!-- <h1>Game Over</h1> -->
+      <br />
+      <p id="end-message"></p>
+      <br />
+      <button id="restart-button">Restart</button>
+    </div>
+  </main>
+
+  <script type="text/javascript" src="js/player.js"></script>
+  <script type="text/javascript" src="js/game.js"></script>
+  <script type="text/javascript" src="js/script.js"></script>
+  <script type="text/javascript" src="js/obstacle.js"></script>
+</body>
+</html>

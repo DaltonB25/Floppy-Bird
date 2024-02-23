@@ -1,0 +1,164 @@
+body{
+  background-color: rgb(42, 165, 52);
+padding: 0;
+margin: 0;
+text-align: center;
+overflow: hidden;
+}
+
+#game-intro {
+  height: 1000px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-image: url(./images/floppybirdpic.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: contain;
+  position: relative;
+  
+}
+
+.arrows-img {
+  width: 80px;
+  position: absolute;
+  top: 40%; 
+  left: 50%; 
+  transform: translate(-50%, -50%);
+}
+
+.spacebar-img {
+  width: 150px;
+  position: absolute;
+  top: 50%; 
+  left: 50%; 
+  transform: translate(-50%, -50%);
+}
+
+#controls-p {
+  border: 1px;
+  font-size: 18px;
+  font-family: "Verdana";
+  color: #fff;
+  position: relative;
+  margin-top: 20px; 
+}
+
+#spacebar-p {
+  font-size: 18px;
+  font-family: "Verdana";
+  color: #fff;
+  position: relative;
+  margin-top: 200px; 
+}
+
+body button {
+  align-content: center;
+  font-size: 30px;
+  background-color: #870007;
+  color: #fff;
+  padding: 20px 40px;
+  border: 0;
+  box-shadow: 0;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  position: absolute;
+  top: 75%; 
+  left: 50%; 
+  transform: translate(-50%, -50%);
+}
+
+
+#game-screen {
+  display: none;
+  align-content: center;
+  border: 1px black;
+  border-bottom-width: 700px;
+  border-top-width: 700px;
+  border-left-width: 1000px;
+  border-right-width: 1000px;
+
+  overflow: hidden;
+  position: relative;
+  background-image: url(./images/nightduo.png);
+  background-position: bottom;
+  background-repeat: repeat-x;
+  background-size: contain;
+  animation: slideright 100s infinite linear;
+  -webkit-animation: slideright 100s infinite linear;
+  width: 47.4%;
+  z-index: +1;
+  
+} 
+
+#game-container {
+  display: flex;
+  width: 100vw;
+  padding: 20px 0px;
+  justify-content: space-around;
+}
+
+.obstacle {
+
+}
+
+.top-obstacle {
+  transform: rotate(180deg);
+}
+
+
+@keyframes slideright {
+  from {
+      background-position: 10000%;
+  }
+  to {
+      background-position: 0%;
+  }
+}
+
+@-webkit-keyframes slideright {
+  from {
+      background-position: 10000%;
+  }
+  to {
+      background-position: 0%;
+  }
+}
+
+
+#game-end {
+    height: 1000px;
+    border: 100px black;
+    display: none;
+    overflow: hidden;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    background-image: url(./images/floppybirdpic.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain;
+    position: relative;  
+  }
+
+
+#end-message {
+  font-size: 30px;
+  font-family: "Verdana";
+  color: #ffffff;
+  position: relative;
+  margin-top: 200px; 
+  
+
+}
+
+#clock-container {
+  padding: 10px 10px 30px 80px;
+  text-align: right;
+  height: 65px;
+  width: 100px;
+  border: 1rem solid; 
+  font-size: 30px;
+}
+
