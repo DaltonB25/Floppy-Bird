@@ -12,7 +12,7 @@ class Game {
       "./images/flappy-bird.png"
     );
     this.height = 1000;
-    this.width = 700;
+    this.width = 900;
     this.obstacles = [];
     this.timeLeft = 30;
     this.score = 0;
@@ -34,10 +34,15 @@ class Game {
   start() {
     this.gameScreen.style.height = `${this.height}px`;
     this.gameScreen.style.width = `${this.width}px`;
+    // this.gameScreen.style.display = "blocl" 
+    let container = document.getElementById('game-container')
+    container.style.display = 'flex'
+    container.style.height = '90vh'
 
     this.startScreen.style.display = "none";
 
     this.gameScreen.style.display = "block";
+    // this.gameScreen.style.width = "47.4%";
     this.stats.style.display = "block";
     this.clockContainer.style.display = "flex";
 
@@ -63,8 +68,8 @@ class Game {
 
      if(this.frames % 120 === 0){
       // console.log(this.frames);top
-      this.obstacles.push(new Obstacle(this.gameScreen, 50, 1000, 700, top, "./images/pipes(2).jpg", 'obstacle'))
-      this.obstacles.push(new Obstacle(this.gameScreen, 50, 1000, 700, secondTop, "./images/pipes(2).jpg", 'top-obstacle'))
+      this.obstacles.push(new Obstacle(this.gameScreen, 50, 1000, this.width, top, "./images/pipes(2).jpg", 'obstacle'))
+      this.obstacles.push(new Obstacle(this.gameScreen, 50, 1000, this.width, secondTop, "./images/pipes(2).jpg", 'top-obstacle'))
       // this.obstacles.push(new Obstacle(this.gameScreen, 50, 1000, 700, secondTop, "../images/pipes(3).jpg"))
       // this.obstacles.push(new)
      }
@@ -155,6 +160,9 @@ applyGravity() {
     this.obstacles.forEach((obstacle) => {
       obstacle.element.remove();
     });
+    let container = document.getElementById('game-container')
+    container.style.display = 'none'
+    container.style.height = '0'
     this.gameScreen.style.height = `${0}px`;
     this.gameScreen.style.width = `${0}px`;
     this.gameScreen.style.display = "none";

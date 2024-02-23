@@ -1,13 +1,27 @@
 body{
-  background-color: rgb(42, 165, 52);
-padding: 0;
+  height: 99vh;
+background-image: url('./images/istockphoto-1254770048-1024x1024.jpg');
+background-position: center;
+background-repeat: no-repeat;
+background-size: contain;
+padding: 25px;
 margin: 0;
 text-align: center;
 overflow: hidden;
+background-color: darkgray;
+display: flex;
+align-items: center;
+justify-content: center;
+}
+
+main {
+  height: 90%;
+  width: 98%
 }
 
 #game-intro {
-  height: 1000px;
+  height: 95%;
+  align-self: center;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -72,13 +86,20 @@ body button {
 
 #game-screen {
   display: none;
+  /* height: 0; */
   align-content: center;
-  border: 1px black;
+  /* margin-left: 15%; */
+  /* border: 1px black;
   border-bottom-width: 700px;
   border-top-width: 700px;
   border-left-width: 1000px;
   border-right-width: 1000px;
 
+  overflow: hidden;
+  position: relative; */
+  /* display: none;
+  align-content: center; */
+  /* padding: px 0px; */
   overflow: hidden;
   position: relative;
   background-image: url(./images/nightduo.png);
@@ -87,15 +108,17 @@ body button {
   background-size: contain;
   animation: slideright 100s infinite linear;
   -webkit-animation: slideright 100s infinite linear;
-  width: 47.4%;
+  /* width: 0%; */
   z-index: +1;
   
 } 
 
 #game-container {
-  display: flex;
-  width: 100vw;
-  padding: 20px 0px;
+  display: none;
+  height: 0;
+  overflow: hidden;
+  /* width: 100vw; */
+  /* padding: 20px 0px; */
   justify-content: space-around;
 }
 
@@ -128,7 +151,8 @@ body button {
 
 
 #game-end {
-    height: 1000px;
+    height: 95%;
+    align-self: center;
     border: 100px black;
     display: none;
     overflow: hidden;
@@ -153,12 +177,19 @@ body button {
 
 }
 
+#stats-container {
+  width: 60px;
+}
+
 #clock-container {
-  padding: 10px 10px 30px 80px;
-  text-align: right;
-  height: 65px;
-  width: 100px;
+  /* padding-left: 25px;
+  padding-bottom: 10px; */
+  text-align: center;
+  height: 80px;
+  width: 60px;
   border: 1rem solid; 
+  border-color: #ffffff;
+  color: white;
   font-size: 30px;
 }
 

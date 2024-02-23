@@ -1,5 +1,6 @@
 class Obstacle {
     constructor(gameScreen, width, height, left, top, image, className) {
+        // this.obstacles.push(new Obstacle(this.gameScreen, 50, 1000, 700, top, "./images/pipes(2).jpg", 'obstacle'))
         this.gameScreen = gameScreen
         this.width = width
         this.height = height
