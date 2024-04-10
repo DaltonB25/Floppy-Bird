@@ -1,6 +1,6 @@
 body{
   height: 99vh;
-background-image: url('./images/istockphoto-1254770048-1024x1024.jpg');
+/* background-image: url('./images/istockphoto-1254770048-1024x1024.jpg'); */
 background-position: center;
 background-repeat: no-repeat;
 background-size: contain;
@@ -17,6 +17,7 @@ justify-content: center;
 main {
   height: 90%;
   width: 98%
+  
 }
 
 #game-intro {
@@ -33,6 +34,18 @@ main {
   position: relative;
   
 }
+
+/*   display: none;
+  align-content: center;
+  overflow: hidden;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-position: bottom;
+  background-repeat: repeat-x;
+  background-size: contain;
+  */
 
 .arrows-img {
   width: 80px;
@@ -86,29 +99,18 @@ body button {
 
 #game-screen {
   display: none;
-  /* height: 0; */
   align-content: center;
-  /* margin-left: 15%; */
-  /* border: 1px black;
-  border-bottom-width: 700px;
-  border-top-width: 700px;
-  border-left-width: 1000px;
-  border-right-width: 1000px;
-
   overflow: hidden;
-  position: relative; */
-  /* display: none;
-  align-content: center; */
-  /* padding: px 0px; */
-  overflow: hidden;
-  position: relative;
-  background-image: url(./images/nightduo.png);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   background-position: bottom;
   background-repeat: repeat-x;
   background-size: contain;
+  background-image: url(./images/nightduo.png);
   animation: slideright 100s infinite linear;
   -webkit-animation: slideright 100s infinite linear;
-  /* width: 0%; */
   z-index: +1;
   
 } 
@@ -122,9 +124,7 @@ body button {
   justify-content: space-around;
 }
 
-.obstacle {
 
-}
 
 .top-obstacle {
   transform: rotate(180deg);
@@ -173,23 +173,33 @@ body button {
   color: #ffffff;
   position: relative;
   margin-top: 200px; 
+  margin-bottom: 5%;
   
 
 }
 
 #stats-container {
   width: 60px;
+  height: 15%;
+  padding: 10px; /* Adjust padding as needed */
+  background-color: #f0f0f0; /* Light gray background color */
+  border-radius: 5px; /* Rounded corners */
+  border: 1px solid #000000; /* Optional border for clarity */
+  text-align: center; /* Center-align text */
+  color: #333; /* Dark text color */
 }
 
 #clock-container {
-  /* padding-left: 25px;
-  padding-bottom: 10px; */
   text-align: center;
-  height: 80px;
+  height:8%;
   width: 60px;
-  border: 1rem solid; 
-  border-color: #ffffff;
+  border: 1rem solid #ffffff;
+  border-radius: 10px; 
+  background-color: #333333; 
   color: white;
-  font-size: 30px;
+  font-size: 32px;
+  font-family: Arial, sans-serif; 
+  padding-left: 1.3%;
+  padding-bottom: 1%;
 }
 
