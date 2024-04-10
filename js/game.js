@@ -17,7 +17,7 @@ class Game {
     this.timeLeft = 30;
     this.score = 0;
     this.lives = 1;
-    this.gravity = .4;
+    this.gravity = .2;
     this.velocityY = 0;
     this.gameIsOver = false;
     this.gameIntervalId;
