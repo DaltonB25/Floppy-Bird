@@ -9,7 +9,7 @@ class Player {
     this.width = width;
     this.height = height;
     this.gravity = 1;
-    this.jumpStrength = 6;
+    this.jumpStrength = 7;
     this.element.src = imgSrc;
     this.element.style.position = "absolute";
     this.element.style.left = `${this.left}px`;
@@ -22,7 +22,7 @@ class Player {
 
 
   move() {
-    this.gravity += .1
+    this.gravity += .2
 
    
     this.top += this.gravity
